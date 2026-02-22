@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Percent Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+    <script src="https://cdnjs.cloudflare.com"></script>
+</head>
+<body>
+    <div class="calculator-card">
+        <div class="header">
+            <h2>% Calculator</h2>
+            <button id="theme-toggle" onclick="toggleTheme()">🌙</button>
+        </div>
+
+        <div class="input-group">
+            <input type="number" id="percent" placeholder="%">
+            <span>of</span>
+            <input type="number" id="num" placeholder="Value">
+        </div>
+
+        <div class="button-row">
+            <button onclick="calculate()" class="calc-btn">Calculate</button>
+            <button onclick="clearFields()" class="clear-btn">Clear</button>
+        </div>
+
+        <div id="result" class="result-display">Result: --</div>
+
+        <div class="history-section">
+            <div class="history-header">
+                <h4>Recent History</h4>
+                <button onclick="exportToPDF()" class="export-btn">
+                    <i class="fas fa-file-pdf"></i> PDF
+                </button>
+            </div>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

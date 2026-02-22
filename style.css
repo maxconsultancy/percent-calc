@@ -1,0 +1,120 @@
+:root {
+    --bg: #f4f7f6;
+    --card: #ffffff;
+    --text: #333;
+    --accent: #007bff;
+    --border: #ddd;
+}
+
+body.dark-mode {
+    --bg: #121212;
+    --card: #1e1e1e;
+    --text: #e0e0e0;
+    --accent: #3792ff;
+    --border: #444;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: 0.3s ease;
+}
+
+.calculator-card {
+    background: var(--card);
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    width: 350px;
+}
+
+.header { display: flex; justify-content: space-between; align-items: center; }
+
+.input-group { display: flex; align-items: center; gap: 10px; margin: 20px 0; }
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--card);
+    color: var(--text);
+    font-size: 1rem;
+}
+
+.button-row { display: flex; gap: 10px; }
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.calc-btn { background: var(--accent); color: white; }
+.clear-btn { background: #6c757d; color: white; }
+.calc-btn:hover { opacity: 0.9; }
+
+#theme-toggle {
+    background: transparent;
+    font-size: 1.2rem;
+    flex: none;
+    width: 40px;
+    color: var(--text);
+}
+
+.result-display {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.history-section {
+    border-top: 1px solid var(--border);
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.export-btn {
+    background: #28a745;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.75rem;
+    flex: none;
+}
+
+#history-list { list-style: none; padding: 0; }
+
+#history-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.9rem;
+}
+
+.delete-btn {
+    background: transparent;
+    color: #ff4d4d;
+    padding: 5px;
+    flex: none;
+}
