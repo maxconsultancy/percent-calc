@@ -2,8 +2,8 @@
 
 A sleek, responsive web application for quick percentage calculations. Built with **Vanilla JavaScript**, **CSS3**, and **HTML5**.
 
-## 🚀 Live Demo
-[Insert your GitHub Pages Link Here]
+## 🚀 Live Demo.   
+https://maxconsultancy.github.io/percent-calc/
 
 ## ✨ Features
 - **Instant Calculation:** Get results as soon as you hit the button.
